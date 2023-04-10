@@ -3,12 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import pages
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route index element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
