@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // import components
-import Input from "./Input";
+import Input from "./Form/FormInput";
 import FormAction from "./Form/FormAction";
 import { registerFields } from "../constants/FormFields";
 
