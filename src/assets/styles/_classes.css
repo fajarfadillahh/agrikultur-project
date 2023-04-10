@@ -4,7 +4,7 @@
     @apply text-[24px] font-bold text-gray-900;
   }
   .section-text {
-    @apply font-semibold text-gray-600;
+    @apply font-medium text-gray-600;
   }
 
   /* button class */
@@ -14,6 +14,6 @@
 
   /* main class */
   .main {
-    @apply max-w[1440px] mx-auto min-h-screen overflow-hidden bg-gray-100;
+    @apply mx-auto min-h-screen max-w-[1440px] overflow-hidden bg-white;
   }
 }
