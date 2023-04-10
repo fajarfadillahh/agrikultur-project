@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // import components
-import Input from "./Form/FormInput";
+import FormInput from "./Form/FormInput";
 import FormExtra from "./Form/FormExtra";
 import FormAction from "./Form/FormAction";
 import { loginFields } from "../constants/FormFields";
@@ -27,7 +27,7 @@ const Login = () => {
   return (
     <form className="grid gap-4" onSubmit={handleSubmit}>
       {fields.map((field) => (
-        <Input
+        <FormInput
           key={field.id}
           handleChange={handleChange}
           value={loginState[field.id]}

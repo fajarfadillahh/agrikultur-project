@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // import components
-import Input from "./Form/FormInput";
+import FormInput from "./Form/FormInput";
 import FormAction from "./Form/FormAction";
 import { registerFields } from "../constants/FormFields";
 
@@ -26,7 +26,7 @@ const Register = () => {
   return (
     <form className="grid gap-4" onSubmit={handleSubmit}>
       {fields.map((field) => (
-        <Input
+        <FormInput
           key={field.id}
           handleChange={handleChange}
           value={registerState[field.id]}
