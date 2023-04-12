@@ -7,7 +7,7 @@ import Register from "../components/Register";
 const RegisterPage = () => {
   return (
     <main className="main flex items-center justify-center">
-      <div className="grid gap-8">
+      <div className="grid w-[460px] gap-8">
         <Header
           heading="Register to create an account"
           paragraph="Already have an account?"

@@ -39,7 +39,7 @@ const Register = () => {
           placeholder={field.placeholder}
         />
       ))}
-      <FormAction text="Register" handleSubmit={handleSubmit} />
+      <FormAction text="Create Account" handleSubmit={handleSubmit} />
     </form>
   );
 };
