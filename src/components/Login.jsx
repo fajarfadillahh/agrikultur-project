@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 // import components
-import FormInput from "./Form/FormInput";
-import FormExtra from "./Form/FormExtra";
-import FormAction from "./Form/FormAction";
+import FormInput from "./form/FormInput";
+import FormExtra from "./form/FormExtra";
+import FormAction from "./form/FormAction";
 import { loginFields } from "../constants/FormFields";
 
 // variables fields login
