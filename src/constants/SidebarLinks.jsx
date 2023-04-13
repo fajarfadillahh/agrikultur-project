@@ -1,47 +1,22 @@
-import {
-  HiOutlineAnnotation,
-  HiOutlineCube,
-  HiOutlineDocumentText,
-  HiOutlineShoppingCart,
-  HiOutlineUsers,
-  HiOutlineViewGrid,
-} from "react-icons/hi";
+import { TbLayoutGrid, TbCards, TbInfoSquareRounded } from "react-icons/tb";
 
 export const sidebar_links = [
   {
     key: "dashboard",
     label: "Dashboard",
     path: "/",
-    icon: <HiOutlineViewGrid />,
+    icon: <TbLayoutGrid />,
   },
   {
-    key: "products",
-    label: "Products",
-    path: "/products",
-    icon: <HiOutlineCube />,
+    key: "swiper",
+    label: "Swiper",
+    path: "/swiper",
+    icon: <TbCards />,
   },
   {
-    key: "orders",
-    label: "Orders",
-    path: "/orders",
-    icon: <HiOutlineShoppingCart />,
-  },
-  {
-    key: "customers",
-    label: "Customers",
-    path: "/customers",
-    icon: <HiOutlineUsers />,
-  },
-  {
-    key: "transactions",
-    label: "Transactions",
-    path: "/transactions",
-    icon: <HiOutlineDocumentText />,
-  },
-  {
-    key: "messages",
-    label: "Messages",
-    path: "/messages",
-    icon: <HiOutlineAnnotation />,
+    key: "information",
+    label: "Information",
+    path: "/information",
+    icon: <TbInfoSquareRounded />,
   },
 ];
