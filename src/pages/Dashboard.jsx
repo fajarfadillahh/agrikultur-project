@@ -19,21 +19,21 @@ const Dashboard = () => {
           />
         </div>
 
-        <table className="table-fixed border border-gray-200">
+        <table className="table-auto border border-gray-200">
           <thead>
             <tr className="divide-x bg-gray-100 text-left">
-              <th className="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 font-semibold text-gray-600">
-                Registration Number
-              </th>
-              <th className="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 font-semibold text-gray-600">
-                User Name
-              </th>
-              <th className="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 font-semibold text-gray-600">
-                Address
-              </th>
-              <th className="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 font-semibold text-gray-600">
-                Email
-              </th>
+              {[["Number"], ["User Name"], ["Address"], ["Email"]].map(
+                ([label], index) => {
+                  return (
+                    <th
+                      key={index}
+                      className="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 font-semibold text-gray-600"
+                    >
+                      {label}
+                    </th>
+                  );
+                }
+              )}
             </tr>
           </thead>
 
