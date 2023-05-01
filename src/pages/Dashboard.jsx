@@ -19,21 +19,25 @@ const Dashboard = () => {
           />
         </div>
 
-        <table className="table-auto border border-gray-200">
+        <table className="table-fixed border border-gray-200">
           <thead>
             <tr className="divide-x bg-gray-100 text-left">
-              {[["Number"], ["User Name"], ["Address"], ["Email"]].map(
-                ([label], index) => {
-                  return (
-                    <th
-                      key={index}
-                      className="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 font-semibold text-gray-600"
-                    >
-                      {label}
-                    </th>
-                  );
-                }
-              )}
+              {[
+                ["Number"],
+                ["User Name"],
+                ["Address"],
+                ["Email"],
+                ["Action"],
+              ].map(([label], index) => {
+                return (
+                  <th
+                    key={index}
+                    className="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 font-semibold text-gray-600"
+                  >
+                    {label}
+                  </th>
+                );
+              })}
             </tr>
           </thead>
 
@@ -41,17 +45,23 @@ const Dashboard = () => {
             {user_data.map((user) => {
               return (
                 <tr key={user.id} className="divide-x bg-white even:bg-gray-50">
-                  <td className="border-b border-gray-200 px-5 py-5">
+                  <td className="h-full border-b border-gray-200 p-3">
                     {user.nik}
                   </td>
-                  <td className="border-b border-gray-200 px-5 py-5">
+                  <td className="h-full border-b border-gray-200 p-3">
                     {user.name}
                   </td>
-                  <td className="border-b border-gray-200 px-5 py-5">
+                  <td className="h-full border-b border-gray-200 p-3">
                     {user.address}
                   </td>
-                  <td className="border-b border-gray-200 px-5 py-5">
+                  <td className="h-full border-b border-gray-200 p-3">
                     {user.email}
+                  </td>
+                  <td className="h-full border-b border-gray-200 p-3">
+                    <div className="flex h-full items-center gap-2">
+                      <button>edit</button>
+                      <button>delete</button>
+                    </div>
                   </td>
                 </tr>
               );
